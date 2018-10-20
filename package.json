@@ -44,6 +44,7 @@
     "ember-service-worker-asset-cache": "^0.6.3",
     "ember-service-worker-cache-fallback": "^0.6.1",
     "ember-source": "~3.4.0",
+    "ember-web-app": "^2.3.0",
     "ember-welcome-page": "^3.2.0",
     "eslint-plugin-ember": "^5.2.0",
     "loader.js": "^4.7.0",
