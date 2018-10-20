@@ -14,6 +14,11 @@ module.exports = function(/* environment, appConfig */) {
     background_color: "#fff",
     theme_color: "#fff",
     icons: [
+      {
+        src: "/ember-welcome-page/images/construction.png",
+        sizes: "540x540",
+        type: "image/png"
+      }
     ],
     ms: {
       tileColor: '#fff'
