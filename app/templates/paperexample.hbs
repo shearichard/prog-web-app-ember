@@ -1,0 +1,13 @@
+<h2>Ember Paper Example</h2>
+<p>This example is taken from <a href="https://miguelcobain.github.io/ember-paper/#/forms">https://miguelcobain.github.io/ember-paper/#/forms</a>.</p>
+
+{{#paper-form onSubmit=(action "disabledSubmitAction") as |form|}}
+  <div class="layout-row">
+    {{form.input label="Favorite Letter" value=favoriteLetter onChange=(action (mut favoriteLetter)) required=true maxlength=1}}
+  </div>
+  <div class="layout-row">
+    {{#form.submit-button raised=true primary=true disabled=form.isInvalid}}
+      Submit
+    {{/form.submit-button}}
+  </div>
+{{/paper-form}}
