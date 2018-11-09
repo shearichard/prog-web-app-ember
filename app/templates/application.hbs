@@ -9,9 +9,28 @@
 --}}
 {{#paper-toolbar}}
   {{#paper-toolbar-tools}}
+    {{!--
     {{#paper-button iconButton=true}}
       {{paper-icon "menu"}}
     {{/paper-button}}
+    --}}
+    {{!-- Test Start --}}
+    {{#paper-menu as |menu|}}
+      {{#menu.trigger}}
+        {{#paper-button onClick=null iconButton=true}}
+          {{paper-icon "local_phone" class="md-menu-origin"}}
+        {{/paper-button}}
+      {{/menu.trigger}}
+
+      {{#menu.content width=4 as |content|}}
+        {{#each options as |item|}}
+          {{#content.menu-item onClick=(action "openSomething")}}
+            <span class="md-menu-align-target">Option</span> {{item}}
+          {{/content.menu-item}}
+        {{/each}}
+      {{/menu.content}}
+    {{/paper-menu}}
+    {{!-- Test End --}}
     <h2>
       Ember Paper Example
     </h2>
