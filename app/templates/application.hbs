@@ -18,16 +18,20 @@
     {{#paper-menu as |menu|}}
       {{#menu.trigger}}
         {{#paper-button onClick=null iconButton=true}}
-          {{paper-icon "local_phone" class="md-menu-origin"}}
+          {{paper-icon "menu" class="md-menu-origin"}}
         {{/paper-button}}
       {{/menu.trigger}}
 
       {{#menu.content width=4 as |content|}}
-        {{#each options as |item|}}
-          {{#content.menu-item onClick=(action "openSomething")}}
-            <span class="md-menu-align-target">Option</span> {{item}}
+          {{#content.menu-item onClick=(action "openApple")}}
+            <span class="md-menu-align-target">Apple</span> {{item}}
           {{/content.menu-item}}
-        {{/each}}
+          {{#content.menu-item onClick=(action "openBanana")}}
+            <span class="md-menu-align-target">Banana</span> {{item}}
+          {{/content.menu-item}}
+          {{#content.menu-item onClick=(action "openCarrot")}}
+            <span class="md-menu-align-target">Carrot</span> {{item}}
+          {{/content.menu-item}}
       {{/menu.content}}
     {{/paper-menu}}
     {{!-- Test End --}}
