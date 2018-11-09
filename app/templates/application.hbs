@@ -32,6 +32,9 @@
           {{#content.menu-item onClick=(action "openCarrot")}}
             <span class="md-menu-align-target">Carrot</span> {{item}}
           {{/content.menu-item}}
+          {{#content.menu-item}}
+            <span class="md-menu-align-target">{{link-to "About" "about"}}</span> {{item}}
+          {{/content.menu-item}}
       {{/menu.content}}
     {{/paper-menu}}
     {{!-- Test End --}}
