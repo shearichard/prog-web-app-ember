@@ -1,9 +1,21 @@
+{{!--
 {{#paper-toolbar}}
   <div class="md-toolbar-tools">
     {{#link-to 'index'}}{{#paper-button}}Home{{/paper-button}}{{/link-to}}
     {{#link-to 'paperexample'}}{{#paper-button}}Paper Example{{/paper-button}}{{/link-to}}
     {{#link-to 'about'}}{{#paper-button}}About{{/paper-button}}{{/link-to}}
   </div>
+{{/paper-toolbar}}
+--}}
+{{#paper-toolbar}}
+  {{#paper-toolbar-tools}}
+    {{#paper-button iconButton=true}}
+      {{paper-icon "menu"}}
+    {{/paper-button}}
+    <h2>
+      Ember Paper Example
+    </h2>
+  {{/paper-toolbar-tools}}
 {{/paper-toolbar}}
 {{outlet}}
 {{!--
