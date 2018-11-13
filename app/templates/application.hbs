@@ -28,17 +28,11 @@
       {{/menu.trigger}}
 
       {{#menu.content width=4 as |content|}}
-          {{#content.menu-item onClick=(action "openApple")}}
-            <span class="md-menu-align-target">Apple</span> {{item}}
-          {{/content.menu-item}}
-          {{#content.menu-item onClick=(action "openBanana")}}
-            <span class="md-menu-align-target">Banana</span> {{item}}
-          {{/content.menu-item}}
-          {{#content.menu-item onClick=(action "openCarrot")}}
-            <span class="md-menu-align-target">Carrot</span> {{item}}
-          {{/content.menu-item}}
           {{#content.menu-item href=(href-to "about")}}
-            <span class="md-menu-align-target">Abouz</span> {{item}}
+            <span class="md-menu-align-target">About</span> {{item}}
+          {{/content.menu-item}}
+          {{#content.menu-item href=(href-to "paperexample")}}
+            <span class="md-menu-align-target">Paper Example</span> {{item}}
           {{/content.menu-item}}
       {{/menu.content}}
     {{/paper-menu}}
