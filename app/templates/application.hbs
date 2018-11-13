@@ -28,6 +28,9 @@
       {{/menu.trigger}}
 
       {{#menu.content width=4 as |content|}}
+          {{#content.menu-item href=(href-to "")}}
+            <span class="md-menu-align-target">Home</span> {{item}}
+          {{/content.menu-item}}
           {{#content.menu-item href=(href-to "about")}}
             <span class="md-menu-align-target">About</span> {{item}}
           {{/content.menu-item}}
